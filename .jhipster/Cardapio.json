@@ -1,0 +1,81 @@
+{
+  "applications": "*",
+  "changelogDate": "20220422142419",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cardapio",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cardapio",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "especiais",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "especiais",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entrada",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "entrada",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "sushi",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "sushi",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "sashimi",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "sashimi",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "makimono",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "makimono",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "hot",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "hot",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "harumaki",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "harumaki",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "temaki",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "temaki",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "yakisoba",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "yakisoba",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "uramaki",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "uramaki",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

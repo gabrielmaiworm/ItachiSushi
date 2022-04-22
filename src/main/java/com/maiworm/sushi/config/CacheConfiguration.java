@@ -48,6 +48,27 @@ public class CacheConfiguration {
             createCache(cm, com.maiworm.sushi.domain.User.class.getName());
             createCache(cm, com.maiworm.sushi.domain.Authority.class.getName());
             createCache(cm, com.maiworm.sushi.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".especiais");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".entradas");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".sushis");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".sashimis");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".makimonos");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".hots");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".harumakis");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".temakis");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".yakisobas");
+            createCache(cm, com.maiworm.sushi.domain.Cardapio.class.getName() + ".uramakis");
+            createCache(cm, com.maiworm.sushi.domain.Especiais.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Entrada.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Sushi.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Sashimi.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Makimono.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Hot.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Harumaki.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Temaki.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Yakisoba.class.getName());
+            createCache(cm, com.maiworm.sushi.domain.Uramaki.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
