@@ -141,6 +141,9 @@ public class YakisobaResource {
                 if (yakisoba.getPromocao() != null) {
                     existingYakisoba.setPromocao(yakisoba.getPromocao());
                 }
+                if (yakisoba.getAtivo() != null) {
+                    existingYakisoba.setAtivo(yakisoba.getAtivo());
+                }
 
                 return existingYakisoba;
             })

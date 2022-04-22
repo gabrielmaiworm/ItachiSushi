@@ -141,6 +141,9 @@ public class MakimonoResource {
                 if (makimono.getPromocao() != null) {
                     existingMakimono.setPromocao(makimono.getPromocao());
                 }
+                if (makimono.getAtivo() != null) {
+                    existingMakimono.setAtivo(makimono.getAtivo());
+                }
 
                 return existingMakimono;
             })

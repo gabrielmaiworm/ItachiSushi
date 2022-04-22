@@ -59,6 +59,10 @@ export const SashimiDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{sashimiEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{sashimiEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{sashimiEntity.cardapio ? sashimiEntity.cardapio.id : ''}</dd>
         </dl>

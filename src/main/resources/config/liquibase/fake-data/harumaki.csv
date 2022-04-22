@@ -1,11 +1,11 @@
-id;nome;descricao;imagem;imagem_content_type;preco;promocao
-1;Liaison alarm;Program hack Chips;../fake-data/blob/hipster.png;image/png;97006;false
-2;Qatar;SMS;../fake-data/blob/hipster.png;image/png;20911;false
-3;Chad Account standardization;hard facilitate Concrete;../fake-data/blob/hipster.png;image/png;97285;false
-4;hybrid;Soft;../fake-data/blob/hipster.png;image/png;63303;false
-5;Account Shirt navigate;User-centric;../fake-data/blob/hipster.png;image/png;14672;false
-6;People's;Shilling mobile Profound;../fake-data/blob/hipster.png;image/png;12534;true
-7;Handcrafted Sports Sports;bluetooth navigating;../fake-data/blob/hipster.png;image/png;10104;true
-8;Tools;programming;../fake-data/blob/hipster.png;image/png;2718;false
-9;Configurable Mobility;Home blue;../fake-data/blob/hipster.png;image/png;13428;true
-10;mindshare;Business-focused Tunnel;../fake-data/blob/hipster.png;image/png;39735;false
+id;nome;descricao;imagem;imagem_content_type;preco;promocao;ativo
+1;Liaison alarm;Program hack Chips;../fake-data/blob/hipster.png;image/png;97006;false;false
+2;array SMS;Tasty;../fake-data/blob/hipster.png;image/png;62404;true;true
+3;RSS;Massachusetts turn-key lime;../fake-data/blob/hipster.png;image/png;35067;false;false
+4;black reboot;pixel;../fake-data/blob/hipster.png;image/png;86354;false;false
+5;navigate;User-centric;../fake-data/blob/hipster.png;image/png;14672;false;false
+6;Hills Shilling;Interactions withdrawal Forward;../fake-data/blob/hipster.png;image/png;67405;true;false
+7;Sports;bypassing;../fake-data/blob/hipster.png;image/png;79142;true;true
+8;enhance Idaho cultivate;Direct Practical Incredible;../fake-data/blob/hipster.png;image/png;73452;false;false
+9;Delaware Tasty;fresh-thinking Administrator Salad;../fake-data/blob/hipster.png;image/png;39735;false;false
+10;EXE Licensed Refined;SQL;../fake-data/blob/hipster.png;image/png;61342;true;true

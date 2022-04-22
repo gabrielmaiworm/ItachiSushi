@@ -1,11 +1,11 @@
-id;nome;descricao;imagem;imagem_content_type;preco;promocao
-1;teal focus;Dam Uganda;../fake-data/blob/hipster.png;image/png;54438;true
-2;Salad;intangible Down-sized;../fake-data/blob/hipster.png;image/png;86794;true
-3;Bedfordshire system Compatible;Administrator Borders;../fake-data/blob/hipster.png;image/png;1440;false
-4;PCI Maine;Frozen policy Wisconsin;../fake-data/blob/hipster.png;image/png;48352;true
-5;Nebraska Managed;Bahrain multimedia;../fake-data/blob/hipster.png;image/png;73292;true
-6;Rapids strategy;Sleek Iowa payment;../fake-data/blob/hipster.png;image/png;58213;true
-7;superstructure leading-edge circuit;Tuna e-business;../fake-data/blob/hipster.png;image/png;36355;true
-8;synthesize Frozen Wooden;Loan Generic;../fake-data/blob/hipster.png;image/png;16101;true
-9;protocol brand;e-services Michigan;../fake-data/blob/hipster.png;image/png;9190;false
-10;El Granite web-enabled;Awesome quantifying Tuna;../fake-data/blob/hipster.png;image/png;64058;false
+id;nome;descricao;imagem;imagem_content_type;preco;promocao;ativo
+1;teal focus;Dam Uganda;../fake-data/blob/hipster.png;image/png;54438;true;false
+2;Dirham;Freeway program Track;../fake-data/blob/hipster.png;image/png;72026;false;false
+3;system Compatible Zambia;Borders Grocery PCI;../fake-data/blob/hipster.png;image/png;55702;false;true
+4;Frozen policy Wisconsin;Customer Benin;../fake-data/blob/hipster.png;image/png;42877;false;true
+5;Tuna circuit;Units SMS;../fake-data/blob/hipster.png;image/png;10900;false;false
+6;hybrid Account;Paradigm facilitate Bedfordshire;../fake-data/blob/hipster.png;image/png;27383;false;false
+7;action-items Fantastic;synthesize Frozen Wooden;../fake-data/blob/hipster.png;image/png;50563;true;true
+8;Generic Chips;haptic;../fake-data/blob/hipster.png;image/png;46566;true;true
+9;ability functionalities;firewall;../fake-data/blob/hipster.png;image/png;34745;false;true
+10;Grass-roots Creative;Georgia;../fake-data/blob/hipster.png;image/png;9912;true;true

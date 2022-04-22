@@ -141,6 +141,9 @@ public class EspeciaisResource {
                 if (especiais.getPromocao() != null) {
                     existingEspeciais.setPromocao(especiais.getPromocao());
                 }
+                if (especiais.getAtivo() != null) {
+                    existingEspeciais.setAtivo(especiais.getAtivo());
+                }
 
                 return existingEspeciais;
             })

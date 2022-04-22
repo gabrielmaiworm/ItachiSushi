@@ -8,9 +8,11 @@ export interface ISushi {
   imagem?: string | null;
   preco?: number | null;
   promocao?: boolean | null;
+  ativo?: boolean | null;
   cardapio?: ICardapio | null;
 }
 
 export const defaultValue: Readonly<ISushi> = {
   promocao: false,
+  ativo: false,
 };

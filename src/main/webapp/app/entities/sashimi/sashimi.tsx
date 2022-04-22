@@ -51,6 +51,7 @@ export const Sashimi = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Sashimi = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{sashimi.preco}</td>
                   <td>{sashimi.promocao ? 'true' : 'false'}</td>
+                  <td>{sashimi.ativo ? 'true' : 'false'}</td>
                   <td>{sashimi.cardapio ? <Link to={`/cardapio/${sashimi.cardapio.id}`}>{sashimi.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

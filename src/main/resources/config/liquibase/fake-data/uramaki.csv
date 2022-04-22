@@ -1,11 +1,11 @@
-id;nome;descricao;imagem;imagem_content_type;preco;promocao
-1;Tools Assimilated panel;Gambia;../fake-data/blob/hipster.png;image/png;70231;false
-2;Rupee;microchip;../fake-data/blob/hipster.png;image/png;94186;true
-3;improvement Lead;Granite;../fake-data/blob/hipster.png;image/png;75616;true
-4;invoice;non-volatile Shirt overriding;../fake-data/blob/hipster.png;image/png;41550;false
-5;client-driven multi-state Rubber;Grenada;../fake-data/blob/hipster.png;image/png;48764;false
-6;directional user-facing Soap;Burkina Fantastic;../fake-data/blob/hipster.png;image/png;53923;true
-7;Avon upward-trending encryption;Comoros;../fake-data/blob/hipster.png;image/png;70352;true
-8;heuristic;payment bandwidth;../fake-data/blob/hipster.png;image/png;69160;false
-9;green;index Generic Iowa;../fake-data/blob/hipster.png;image/png;76891;false
-10;local expedite Card;Cotton cyan Computer;../fake-data/blob/hipster.png;image/png;22630;false
+id;nome;descricao;imagem;imagem_content_type;preco;promocao;ativo
+1;Tools Assimilated panel;Gambia;../fake-data/blob/hipster.png;image/png;70231;false;false
+2;Madagascar microchip Accounts;program;../fake-data/blob/hipster.png;image/png;3346;false;false
+3;Bypass;Chicken non-volatile Shirt;../fake-data/blob/hipster.png;image/png;84335;false;true
+4;Via Shirt;Azerbaijan Investment;../fake-data/blob/hipster.png;image/png;14101;true;false
+5;Berkshire directional user-facing;Account;../fake-data/blob/hipster.png;image/png;52066;false;false
+6;sticky;XML virtual Home;../fake-data/blob/hipster.png;image/png;32110;false;true
+7;repurpose;heuristic;../fake-data/blob/hipster.png;image/png;41531;true;true
+8;bandwidth Iceland;Metal;../fake-data/blob/hipster.png;image/png;64960;false;true
+9;infrastructures secondary uniform;cross-platform generating;../fake-data/blob/hipster.png;image/png;47576;true;false
+10;Colombia Delaware;Function-based;../fake-data/blob/hipster.png;image/png;72223;false;false

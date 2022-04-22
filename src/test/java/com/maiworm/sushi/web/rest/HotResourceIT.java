@@ -47,6 +47,9 @@ class HotResourceIT {
     private static final Boolean DEFAULT_PROMOCAO = false;
     private static final Boolean UPDATED_PROMOCAO = true;
 
+    private static final Boolean DEFAULT_ATIVO = false;
+    private static final Boolean UPDATED_ATIVO = true;
+
     private static final String ENTITY_API_URL = "/api/hots";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -77,7 +80,8 @@ class HotResourceIT {
             .imagem(DEFAULT_IMAGEM)
             .imagemContentType(DEFAULT_IMAGEM_CONTENT_TYPE)
             .preco(DEFAULT_PRECO)
-            .promocao(DEFAULT_PROMOCAO);
+            .promocao(DEFAULT_PROMOCAO)
+            .ativo(DEFAULT_ATIVO);
         return hot;
     }
 
@@ -94,7 +98,8 @@ class HotResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
         return hot;
     }
 
@@ -122,6 +127,7 @@ class HotResourceIT {
         assertThat(testHot.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testHot.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testHot.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testHot.getAtivo()).isEqualTo(DEFAULT_ATIVO);
     }
 
     @Test
@@ -159,7 +165,8 @@ class HotResourceIT {
             .andExpect(jsonPath("$.[*].imagemContentType").value(hasItem(DEFAULT_IMAGEM_CONTENT_TYPE)))
             .andExpect(jsonPath("$.[*].imagem").value(hasItem(Base64Utils.encodeToString(DEFAULT_IMAGEM))))
             .andExpect(jsonPath("$.[*].preco").value(hasItem(DEFAULT_PRECO.doubleValue())))
-            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())));
+            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())))
+            .andExpect(jsonPath("$.[*].ativo").value(hasItem(DEFAULT_ATIVO.booleanValue())));
     }
 
     @Test
@@ -179,7 +186,8 @@ class HotResourceIT {
             .andExpect(jsonPath("$.imagemContentType").value(DEFAULT_IMAGEM_CONTENT_TYPE))
             .andExpect(jsonPath("$.imagem").value(Base64Utils.encodeToString(DEFAULT_IMAGEM)))
             .andExpect(jsonPath("$.preco").value(DEFAULT_PRECO.doubleValue()))
-            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()));
+            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()))
+            .andExpect(jsonPath("$.ativo").value(DEFAULT_ATIVO.booleanValue()));
     }
 
     @Test
@@ -207,7 +215,8 @@ class HotResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restHotMockMvc
             .perform(
@@ -227,6 +236,7 @@ class HotResourceIT {
         assertThat(testHot.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testHot.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testHot.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testHot.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -299,7 +309,8 @@ class HotResourceIT {
             .nome(UPDATED_NOME)
             .descricao(UPDATED_DESCRICAO)
             .imagem(UPDATED_IMAGEM)
-            .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE);
+            .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
+            .ativo(UPDATED_ATIVO);
 
         restHotMockMvc
             .perform(
@@ -319,6 +330,7 @@ class HotResourceIT {
         assertThat(testHot.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testHot.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testHot.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testHot.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -339,7 +351,8 @@ class HotResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restHotMockMvc
             .perform(
@@ -359,6 +372,7 @@ class HotResourceIT {
         assertThat(testHot.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testHot.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testHot.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testHot.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test

@@ -86,6 +86,7 @@ export const SushiUpdate = (props: RouteComponentProps<{ id: string }>) => {
               <ValidatedBlobField label="Imagem" id="sushi-imagem" name="imagem" data-cy="imagem" isImage accept="image/*" />
               <ValidatedField label="Preco" id="sushi-preco" name="preco" data-cy="preco" type="text" />
               <ValidatedField label="Promocao" id="sushi-promocao" name="promocao" data-cy="promocao" check type="checkbox" />
+              <ValidatedField label="Ativo" id="sushi-ativo" name="ativo" data-cy="ativo" check type="checkbox" />
               <ValidatedField id="sushi-cardapio" name="cardapio" data-cy="cardapio" label="Cardapio" type="select">
                 <option value="" key="0" />
                 {cardapios

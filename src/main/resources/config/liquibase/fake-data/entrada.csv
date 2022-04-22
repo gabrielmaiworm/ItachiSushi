@@ -1,11 +1,11 @@
-id;nome;descricao;imagem;imagem_content_type;preco;promocao
-1;back-end;bandwidth Handcrafted;../fake-data/blob/hipster.png;image/png;53566;true
-2;bypass;motivating Dinar;../fake-data/blob/hipster.png;image/png;8571;false
-3;Berkshire online;olive Card transmitting;../fake-data/blob/hipster.png;image/png;97251;true
-4;Georgia;generation Cuba encryption;../fake-data/blob/hipster.png;image/png;25747;true
-5;Multi-channelled compressing;calculating;../fake-data/blob/hipster.png;image/png;19459;true
-6;Loan Engineer;Tasty Music turn-key;../fake-data/blob/hipster.png;image/png;29703;true
-7;Principal mobile Keyboard;Chair;../fake-data/blob/hipster.png;image/png;32362;true
-8;Avon;Quality payment mesh;../fake-data/blob/hipster.png;image/png;98016;true
-9;Canada Chair;Executive TCP;../fake-data/blob/hipster.png;image/png;79974;true
-10;innovative;synergize task-force;../fake-data/blob/hipster.png;image/png;18325;false
+id;nome;descricao;imagem;imagem_content_type;preco;promocao;ativo
+1;back-end;bandwidth Handcrafted;../fake-data/blob/hipster.png;image/png;53566;true;false
+2;Incredible motivating Dinar;viral;../fake-data/blob/hipster.png;image/png;43230;false;true
+3;Sports deposit;Suriname Chips local;../fake-data/blob/hipster.png;image/png;76355;true;false
+4;Operations;encryption Pre-emptive;../fake-data/blob/hipster.png;image/png;25754;false;false
+5;Configurable calculating ivory;Architect modular;../fake-data/blob/hipster.png;image/png;10033;true;true
+6;Steel;Market Dollar;../fake-data/blob/hipster.png;image/png;64260;false;true
+7;Keyboard;Chair;../fake-data/blob/hipster.png;image/png;32362;true;false
+8;Sausages Port;mesh Strategist Canada;../fake-data/blob/hipster.png;image/png;5716;true;true
+9;copying;cyan;../fake-data/blob/hipster.png;image/png;29725;true;true
+10;innovative;synergize task-force;../fake-data/blob/hipster.png;image/png;18325;false;true

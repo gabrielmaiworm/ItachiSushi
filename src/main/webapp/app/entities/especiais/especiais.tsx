@@ -51,6 +51,7 @@ export const Especiais = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Especiais = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{especiais.preco}</td>
                   <td>{especiais.promocao ? 'true' : 'false'}</td>
+                  <td>{especiais.ativo ? 'true' : 'false'}</td>
                   <td>{especiais.cardapio ? <Link to={`/cardapio/${especiais.cardapio.id}`}>{especiais.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

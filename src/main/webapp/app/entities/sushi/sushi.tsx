@@ -51,6 +51,7 @@ export const Sushi = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Sushi = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{sushi.preco}</td>
                   <td>{sushi.promocao ? 'true' : 'false'}</td>
+                  <td>{sushi.ativo ? 'true' : 'false'}</td>
                   <td>{sushi.cardapio ? <Link to={`/cardapio/${sushi.cardapio.id}`}>{sushi.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

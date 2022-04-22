@@ -139,6 +139,9 @@ public class SashimiResource {
                 if (sashimi.getPromocao() != null) {
                     existingSashimi.setPromocao(sashimi.getPromocao());
                 }
+                if (sashimi.getAtivo() != null) {
+                    existingSashimi.setAtivo(sashimi.getAtivo());
+                }
 
                 return existingSashimi;
             })

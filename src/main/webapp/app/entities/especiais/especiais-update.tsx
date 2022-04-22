@@ -86,6 +86,7 @@ export const EspeciaisUpdate = (props: RouteComponentProps<{ id: string }>) => {
               <ValidatedBlobField label="Imagem" id="especiais-imagem" name="imagem" data-cy="imagem" isImage accept="image/*" />
               <ValidatedField label="Preco" id="especiais-preco" name="preco" data-cy="preco" type="text" />
               <ValidatedField label="Promocao" id="especiais-promocao" name="promocao" data-cy="promocao" check type="checkbox" />
+              <ValidatedField label="Ativo" id="especiais-ativo" name="ativo" data-cy="ativo" check type="checkbox" />
               <ValidatedField id="especiais-cardapio" name="cardapio" data-cy="cardapio" label="Cardapio" type="select">
                 <option value="" key="0" />
                 {cardapios

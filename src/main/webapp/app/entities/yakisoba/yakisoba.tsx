@@ -51,6 +51,7 @@ export const Yakisoba = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Yakisoba = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{yakisoba.preco}</td>
                   <td>{yakisoba.promocao ? 'true' : 'false'}</td>
+                  <td>{yakisoba.ativo ? 'true' : 'false'}</td>
                   <td>{yakisoba.cardapio ? <Link to={`/cardapio/${yakisoba.cardapio.id}`}>{yakisoba.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

@@ -139,6 +139,9 @@ public class EntradaResource {
                 if (entrada.getPromocao() != null) {
                     existingEntrada.setPromocao(entrada.getPromocao());
                 }
+                if (entrada.getAtivo() != null) {
+                    existingEntrada.setAtivo(entrada.getAtivo());
+                }
 
                 return existingEntrada;
             })

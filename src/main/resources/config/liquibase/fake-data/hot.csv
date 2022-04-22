@@ -1,11 +1,11 @@
-id;nome;descricao;imagem;imagem_content_type;preco;promocao
-1;Frozen Market;Interface;../fake-data/blob/hipster.png;image/png;89433;false
-2;Functionality;Handcrafted;../fake-data/blob/hipster.png;image/png;63017;false
-3;Books Account;Engineer Colombia;../fake-data/blob/hipster.png;image/png;22250;false
-4;Handmade web scale;Future generate Loan;../fake-data/blob/hipster.png;image/png;72627;false
-5;Egyptian payment mindshare;Awesome schemas;../fake-data/blob/hipster.png;image/png;23018;true
-6;Multi-tiered out-of-the-box Steel;blue;../fake-data/blob/hipster.png;image/png;44659;true
-7;Associate;services Rubber black;../fake-data/blob/hipster.png;image/png;67171;false
-8;Views artificial Arkansas;Clothing input;../fake-data/blob/hipster.png;image/png;60325;true
-9;standardization New;North invoice;../fake-data/blob/hipster.png;image/png;5105;true
-10;Gorgeous Technician Rustic;withdrawal;../fake-data/blob/hipster.png;image/png;87045;false
+id;nome;descricao;imagem;imagem_content_type;preco;promocao;ativo
+1;Frozen Market;Interface;../fake-data/blob/hipster.png;image/png;89433;false;false
+2;Multi-tiered Handcrafted withdrawal;Tools;../fake-data/blob/hipster.png;image/png;31783;true;true
+3;optimizing gold compelling;redundant Cotton Frozen;../fake-data/blob/hipster.png;image/png;24705;false;false
+4;distributed Reunion feed;payment;../fake-data/blob/hipster.png;image/png;42544;true;false
+5;Awesome schemas;Cambridgeshire;../fake-data/blob/hipster.png;image/png;48972;true;false
+6;Crescent Specialist Small;Intelligent services Rubber;../fake-data/blob/hipster.png;image/png;20304;false;true
+7;real-time Tactics Intelligent;Massachusetts;../fake-data/blob/hipster.png;image/png;69513;false;true
+8;e-commerce Bedfordshire needs-based;Oklahoma Tuna;../fake-data/blob/hipster.png;image/png;93974;false;true
+9;Gorgeous Technician Rustic;withdrawal;../fake-data/blob/hipster.png;image/png;87045;false;false
+10;Denar high-level Beauty;Berkshire;../fake-data/blob/hipster.png;image/png;95565;false;true

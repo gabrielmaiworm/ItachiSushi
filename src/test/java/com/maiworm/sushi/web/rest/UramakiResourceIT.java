@@ -47,6 +47,9 @@ class UramakiResourceIT {
     private static final Boolean DEFAULT_PROMOCAO = false;
     private static final Boolean UPDATED_PROMOCAO = true;
 
+    private static final Boolean DEFAULT_ATIVO = false;
+    private static final Boolean UPDATED_ATIVO = true;
+
     private static final String ENTITY_API_URL = "/api/uramakis";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -77,7 +80,8 @@ class UramakiResourceIT {
             .imagem(DEFAULT_IMAGEM)
             .imagemContentType(DEFAULT_IMAGEM_CONTENT_TYPE)
             .preco(DEFAULT_PRECO)
-            .promocao(DEFAULT_PROMOCAO);
+            .promocao(DEFAULT_PROMOCAO)
+            .ativo(DEFAULT_ATIVO);
         return uramaki;
     }
 
@@ -94,7 +98,8 @@ class UramakiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
         return uramaki;
     }
 
@@ -122,6 +127,7 @@ class UramakiResourceIT {
         assertThat(testUramaki.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testUramaki.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testUramaki.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testUramaki.getAtivo()).isEqualTo(DEFAULT_ATIVO);
     }
 
     @Test
@@ -159,7 +165,8 @@ class UramakiResourceIT {
             .andExpect(jsonPath("$.[*].imagemContentType").value(hasItem(DEFAULT_IMAGEM_CONTENT_TYPE)))
             .andExpect(jsonPath("$.[*].imagem").value(hasItem(Base64Utils.encodeToString(DEFAULT_IMAGEM))))
             .andExpect(jsonPath("$.[*].preco").value(hasItem(DEFAULT_PRECO.doubleValue())))
-            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())));
+            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())))
+            .andExpect(jsonPath("$.[*].ativo").value(hasItem(DEFAULT_ATIVO.booleanValue())));
     }
 
     @Test
@@ -179,7 +186,8 @@ class UramakiResourceIT {
             .andExpect(jsonPath("$.imagemContentType").value(DEFAULT_IMAGEM_CONTENT_TYPE))
             .andExpect(jsonPath("$.imagem").value(Base64Utils.encodeToString(DEFAULT_IMAGEM)))
             .andExpect(jsonPath("$.preco").value(DEFAULT_PRECO.doubleValue()))
-            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()));
+            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()))
+            .andExpect(jsonPath("$.ativo").value(DEFAULT_ATIVO.booleanValue()));
     }
 
     @Test
@@ -207,7 +215,8 @@ class UramakiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restUramakiMockMvc
             .perform(
@@ -227,6 +236,7 @@ class UramakiResourceIT {
         assertThat(testUramaki.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testUramaki.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testUramaki.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testUramaki.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -302,7 +312,8 @@ class UramakiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restUramakiMockMvc
             .perform(
@@ -322,6 +333,7 @@ class UramakiResourceIT {
         assertThat(testUramaki.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testUramaki.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testUramaki.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testUramaki.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -342,7 +354,8 @@ class UramakiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restUramakiMockMvc
             .perform(
@@ -362,6 +375,7 @@ class UramakiResourceIT {
         assertThat(testUramaki.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testUramaki.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testUramaki.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testUramaki.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test

@@ -51,6 +51,7 @@ export const Hot = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Hot = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{hot.preco}</td>
                   <td>{hot.promocao ? 'true' : 'false'}</td>
+                  <td>{hot.ativo ? 'true' : 'false'}</td>
                   <td>{hot.cardapio ? <Link to={`/cardapio/${hot.cardapio.id}`}>{hot.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

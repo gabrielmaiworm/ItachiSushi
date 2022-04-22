@@ -59,6 +59,10 @@ export const HarumakiDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{harumakiEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{harumakiEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{harumakiEntity.cardapio ? harumakiEntity.cardapio.id : ''}</dd>
         </dl>

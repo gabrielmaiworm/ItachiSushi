@@ -137,6 +137,9 @@ public class SushiResource {
                 if (sushi.getPromocao() != null) {
                     existingSushi.setPromocao(sushi.getPromocao());
                 }
+                if (sushi.getAtivo() != null) {
+                    existingSushi.setAtivo(sushi.getAtivo());
+                }
 
                 return existingSushi;
             })

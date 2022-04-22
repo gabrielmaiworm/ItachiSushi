@@ -25,6 +25,10 @@
     {
       "fieldName": "promocao",
       "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ativo",
+      "fieldType": "Boolean"
     }
   ],
   "fluentMethods": true,
