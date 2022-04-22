@@ -1,0 +1,127 @@
+entity Cardapio {
+	nome String
+}
+
+relationship  OneToMany {
+	Cardapio{Especiais} to Especiais
+} 
+
+relationship  OneToMany {
+	Cardapio{Entrada} to Entrada
+} 
+
+relationship  OneToMany {
+	Cardapio{Sushi} to Sushi
+} 
+
+relationship  OneToMany {
+	Cardapio{Sashimi} to Sashimi
+} 
+
+relationship  OneToMany {
+	Cardapio{Makimono} to Makimono
+} 
+
+relationship  OneToMany {
+	Cardapio{Hot} to Hot
+} 
+
+relationship  OneToMany {
+	Cardapio{Harumaki} to Harumaki
+} 
+
+relationship  OneToMany {
+	Cardapio{Temaki} to Temaki
+} 
+
+relationship  OneToMany {
+	Cardapio{Yakisoba} to Yakisoba
+} 
+
+relationship  OneToMany {
+	Cardapio{Uramaki} to Uramaki
+} 
+
+entity Especiais {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Entrada {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Sushi {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Sashimi {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Makimono {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Hot {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Harumaki {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Temaki {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Yakisoba {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+entity Uramaki {
+	nome String
+    descricao String
+    imagem ImageBlob
+    preco Double
+    promocao Boolean
+}
+
+
+
+
