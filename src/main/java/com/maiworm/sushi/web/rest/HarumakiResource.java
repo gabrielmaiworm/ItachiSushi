@@ -141,6 +141,9 @@ public class HarumakiResource {
                 if (harumaki.getPromocao() != null) {
                     existingHarumaki.setPromocao(harumaki.getPromocao());
                 }
+                if (harumaki.getAtivo() != null) {
+                    existingHarumaki.setAtivo(harumaki.getAtivo());
+                }
 
                 return existingHarumaki;
             })

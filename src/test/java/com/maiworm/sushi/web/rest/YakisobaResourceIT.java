@@ -47,6 +47,9 @@ class YakisobaResourceIT {
     private static final Boolean DEFAULT_PROMOCAO = false;
     private static final Boolean UPDATED_PROMOCAO = true;
 
+    private static final Boolean DEFAULT_ATIVO = false;
+    private static final Boolean UPDATED_ATIVO = true;
+
     private static final String ENTITY_API_URL = "/api/yakisobas";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -77,7 +80,8 @@ class YakisobaResourceIT {
             .imagem(DEFAULT_IMAGEM)
             .imagemContentType(DEFAULT_IMAGEM_CONTENT_TYPE)
             .preco(DEFAULT_PRECO)
-            .promocao(DEFAULT_PROMOCAO);
+            .promocao(DEFAULT_PROMOCAO)
+            .ativo(DEFAULT_ATIVO);
         return yakisoba;
     }
 
@@ -94,7 +98,8 @@ class YakisobaResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
         return yakisoba;
     }
 
@@ -122,6 +127,7 @@ class YakisobaResourceIT {
         assertThat(testYakisoba.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testYakisoba.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testYakisoba.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testYakisoba.getAtivo()).isEqualTo(DEFAULT_ATIVO);
     }
 
     @Test
@@ -159,7 +165,8 @@ class YakisobaResourceIT {
             .andExpect(jsonPath("$.[*].imagemContentType").value(hasItem(DEFAULT_IMAGEM_CONTENT_TYPE)))
             .andExpect(jsonPath("$.[*].imagem").value(hasItem(Base64Utils.encodeToString(DEFAULT_IMAGEM))))
             .andExpect(jsonPath("$.[*].preco").value(hasItem(DEFAULT_PRECO.doubleValue())))
-            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())));
+            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())))
+            .andExpect(jsonPath("$.[*].ativo").value(hasItem(DEFAULT_ATIVO.booleanValue())));
     }
 
     @Test
@@ -179,7 +186,8 @@ class YakisobaResourceIT {
             .andExpect(jsonPath("$.imagemContentType").value(DEFAULT_IMAGEM_CONTENT_TYPE))
             .andExpect(jsonPath("$.imagem").value(Base64Utils.encodeToString(DEFAULT_IMAGEM)))
             .andExpect(jsonPath("$.preco").value(DEFAULT_PRECO.doubleValue()))
-            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()));
+            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()))
+            .andExpect(jsonPath("$.ativo").value(DEFAULT_ATIVO.booleanValue()));
     }
 
     @Test
@@ -207,7 +215,8 @@ class YakisobaResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restYakisobaMockMvc
             .perform(
@@ -227,6 +236,7 @@ class YakisobaResourceIT {
         assertThat(testYakisoba.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testYakisoba.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testYakisoba.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testYakisoba.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -297,7 +307,7 @@ class YakisobaResourceIT {
         Yakisoba partialUpdatedYakisoba = new Yakisoba();
         partialUpdatedYakisoba.setId(yakisoba.getId());
 
-        partialUpdatedYakisoba.nome(UPDATED_NOME).descricao(UPDATED_DESCRICAO);
+        partialUpdatedYakisoba.nome(UPDATED_NOME).descricao(UPDATED_DESCRICAO).ativo(UPDATED_ATIVO);
 
         restYakisobaMockMvc
             .perform(
@@ -317,6 +327,7 @@ class YakisobaResourceIT {
         assertThat(testYakisoba.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testYakisoba.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testYakisoba.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testYakisoba.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -337,7 +348,8 @@ class YakisobaResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restYakisobaMockMvc
             .perform(
@@ -357,6 +369,7 @@ class YakisobaResourceIT {
         assertThat(testYakisoba.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testYakisoba.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testYakisoba.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testYakisoba.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test

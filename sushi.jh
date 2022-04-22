@@ -48,6 +48,7 @@ entity Especiais {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Entrada {
@@ -56,6 +57,7 @@ entity Entrada {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Sushi {
@@ -64,6 +66,7 @@ entity Sushi {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Sashimi {
@@ -72,6 +75,7 @@ entity Sashimi {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Makimono {
@@ -80,6 +84,7 @@ entity Makimono {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Hot {
@@ -88,6 +93,7 @@ entity Hot {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Harumaki {
@@ -96,6 +102,7 @@ entity Harumaki {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Temaki {
@@ -104,6 +111,7 @@ entity Temaki {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Yakisoba {
@@ -112,6 +120,7 @@ entity Yakisoba {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 entity Uramaki {
@@ -120,6 +129,7 @@ entity Uramaki {
     imagem ImageBlob
     preco Double
     promocao Boolean
+    ativo Boolean
 }
 
 

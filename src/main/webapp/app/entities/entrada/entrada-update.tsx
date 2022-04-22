@@ -86,6 +86,7 @@ export const EntradaUpdate = (props: RouteComponentProps<{ id: string }>) => {
               <ValidatedBlobField label="Imagem" id="entrada-imagem" name="imagem" data-cy="imagem" isImage accept="image/*" />
               <ValidatedField label="Preco" id="entrada-preco" name="preco" data-cy="preco" type="text" />
               <ValidatedField label="Promocao" id="entrada-promocao" name="promocao" data-cy="promocao" check type="checkbox" />
+              <ValidatedField label="Ativo" id="entrada-ativo" name="ativo" data-cy="ativo" check type="checkbox" />
               <ValidatedField id="entrada-cardapio" name="cardapio" data-cy="cardapio" label="Cardapio" type="select">
                 <option value="" key="0" />
                 {cardapios

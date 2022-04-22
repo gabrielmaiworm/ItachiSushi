@@ -51,6 +51,7 @@ export const Temaki = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Temaki = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{temaki.preco}</td>
                   <td>{temaki.promocao ? 'true' : 'false'}</td>
+                  <td>{temaki.ativo ? 'true' : 'false'}</td>
                   <td>{temaki.cardapio ? <Link to={`/cardapio/${temaki.cardapio.id}`}>{temaki.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

@@ -59,6 +59,10 @@ export const YakisobaDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{yakisobaEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{yakisobaEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{yakisobaEntity.cardapio ? yakisobaEntity.cardapio.id : ''}</dd>
         </dl>

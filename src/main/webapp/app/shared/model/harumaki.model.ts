@@ -8,9 +8,11 @@ export interface IHarumaki {
   imagem?: string | null;
   preco?: number | null;
   promocao?: boolean | null;
+  ativo?: boolean | null;
   cardapio?: ICardapio | null;
 }
 
 export const defaultValue: Readonly<IHarumaki> = {
   promocao: false,
+  ativo: false,
 };

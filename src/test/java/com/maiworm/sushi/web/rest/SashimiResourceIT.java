@@ -47,6 +47,9 @@ class SashimiResourceIT {
     private static final Boolean DEFAULT_PROMOCAO = false;
     private static final Boolean UPDATED_PROMOCAO = true;
 
+    private static final Boolean DEFAULT_ATIVO = false;
+    private static final Boolean UPDATED_ATIVO = true;
+
     private static final String ENTITY_API_URL = "/api/sashimis";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -77,7 +80,8 @@ class SashimiResourceIT {
             .imagem(DEFAULT_IMAGEM)
             .imagemContentType(DEFAULT_IMAGEM_CONTENT_TYPE)
             .preco(DEFAULT_PRECO)
-            .promocao(DEFAULT_PROMOCAO);
+            .promocao(DEFAULT_PROMOCAO)
+            .ativo(DEFAULT_ATIVO);
         return sashimi;
     }
 
@@ -94,7 +98,8 @@ class SashimiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
         return sashimi;
     }
 
@@ -122,6 +127,7 @@ class SashimiResourceIT {
         assertThat(testSashimi.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testSashimi.getPreco()).isEqualTo(DEFAULT_PRECO);
         assertThat(testSashimi.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testSashimi.getAtivo()).isEqualTo(DEFAULT_ATIVO);
     }
 
     @Test
@@ -159,7 +165,8 @@ class SashimiResourceIT {
             .andExpect(jsonPath("$.[*].imagemContentType").value(hasItem(DEFAULT_IMAGEM_CONTENT_TYPE)))
             .andExpect(jsonPath("$.[*].imagem").value(hasItem(Base64Utils.encodeToString(DEFAULT_IMAGEM))))
             .andExpect(jsonPath("$.[*].preco").value(hasItem(DEFAULT_PRECO.doubleValue())))
-            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())));
+            .andExpect(jsonPath("$.[*].promocao").value(hasItem(DEFAULT_PROMOCAO.booleanValue())))
+            .andExpect(jsonPath("$.[*].ativo").value(hasItem(DEFAULT_ATIVO.booleanValue())));
     }
 
     @Test
@@ -179,7 +186,8 @@ class SashimiResourceIT {
             .andExpect(jsonPath("$.imagemContentType").value(DEFAULT_IMAGEM_CONTENT_TYPE))
             .andExpect(jsonPath("$.imagem").value(Base64Utils.encodeToString(DEFAULT_IMAGEM)))
             .andExpect(jsonPath("$.preco").value(DEFAULT_PRECO.doubleValue()))
-            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()));
+            .andExpect(jsonPath("$.promocao").value(DEFAULT_PROMOCAO.booleanValue()))
+            .andExpect(jsonPath("$.ativo").value(DEFAULT_ATIVO.booleanValue()));
     }
 
     @Test
@@ -207,7 +215,8 @@ class SashimiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restSashimiMockMvc
             .perform(
@@ -227,6 +236,7 @@ class SashimiResourceIT {
         assertThat(testSashimi.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testSashimi.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testSashimi.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testSashimi.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test
@@ -317,6 +327,7 @@ class SashimiResourceIT {
         assertThat(testSashimi.getImagemContentType()).isEqualTo(DEFAULT_IMAGEM_CONTENT_TYPE);
         assertThat(testSashimi.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testSashimi.getPromocao()).isEqualTo(DEFAULT_PROMOCAO);
+        assertThat(testSashimi.getAtivo()).isEqualTo(DEFAULT_ATIVO);
     }
 
     @Test
@@ -337,7 +348,8 @@ class SashimiResourceIT {
             .imagem(UPDATED_IMAGEM)
             .imagemContentType(UPDATED_IMAGEM_CONTENT_TYPE)
             .preco(UPDATED_PRECO)
-            .promocao(UPDATED_PROMOCAO);
+            .promocao(UPDATED_PROMOCAO)
+            .ativo(UPDATED_ATIVO);
 
         restSashimiMockMvc
             .perform(
@@ -357,6 +369,7 @@ class SashimiResourceIT {
         assertThat(testSashimi.getImagemContentType()).isEqualTo(UPDATED_IMAGEM_CONTENT_TYPE);
         assertThat(testSashimi.getPreco()).isEqualTo(UPDATED_PRECO);
         assertThat(testSashimi.getPromocao()).isEqualTo(UPDATED_PROMOCAO);
+        assertThat(testSashimi.getAtivo()).isEqualTo(UPDATED_ATIVO);
     }
 
     @Test

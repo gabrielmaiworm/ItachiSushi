@@ -137,6 +137,9 @@ public class HotResource {
                 if (hot.getPromocao() != null) {
                     existingHot.setPromocao(hot.getPromocao());
                 }
+                if (hot.getAtivo() != null) {
+                    existingHot.setAtivo(hot.getAtivo());
+                }
 
                 return existingHot;
             })

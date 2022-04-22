@@ -59,6 +59,10 @@ export const EntradaDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{entradaEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{entradaEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{entradaEntity.cardapio ? entradaEntity.cardapio.id : ''}</dd>
         </dl>

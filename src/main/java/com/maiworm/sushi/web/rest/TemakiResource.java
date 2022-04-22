@@ -139,6 +139,9 @@ public class TemakiResource {
                 if (temaki.getPromocao() != null) {
                     existingTemaki.setPromocao(temaki.getPromocao());
                 }
+                if (temaki.getAtivo() != null) {
+                    existingTemaki.setAtivo(temaki.getAtivo());
+                }
 
                 return existingTemaki;
             })

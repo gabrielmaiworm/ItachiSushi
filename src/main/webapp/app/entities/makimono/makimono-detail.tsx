@@ -59,6 +59,10 @@ export const MakimonoDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{makimonoEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{makimonoEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{makimonoEntity.cardapio ? makimonoEntity.cardapio.id : ''}</dd>
         </dl>

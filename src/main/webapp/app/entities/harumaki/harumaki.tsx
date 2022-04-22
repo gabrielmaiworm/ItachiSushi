@@ -51,6 +51,7 @@ export const Harumaki = (props: RouteComponentProps<{ url: string }>) => {
                 <th>Imagem</th>
                 <th>Preco</th>
                 <th>Promocao</th>
+                <th>Ativo</th>
                 <th>Cardapio</th>
                 <th />
               </tr>
@@ -82,6 +83,7 @@ export const Harumaki = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{harumaki.preco}</td>
                   <td>{harumaki.promocao ? 'true' : 'false'}</td>
+                  <td>{harumaki.ativo ? 'true' : 'false'}</td>
                   <td>{harumaki.cardapio ? <Link to={`/cardapio/${harumaki.cardapio.id}`}>{harumaki.cardapio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

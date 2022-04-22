@@ -139,6 +139,9 @@ public class UramakiResource {
                 if (uramaki.getPromocao() != null) {
                     existingUramaki.setPromocao(uramaki.getPromocao());
                 }
+                if (uramaki.getAtivo() != null) {
+                    existingUramaki.setAtivo(uramaki.getAtivo());
+                }
 
                 return existingUramaki;
             })

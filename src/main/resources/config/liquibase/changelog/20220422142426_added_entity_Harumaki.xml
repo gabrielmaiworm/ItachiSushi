@@ -32,6 +32,9 @@
             <column name="promocao" type="boolean">
                 <constraints nullable="true" />
             </column>
+            <column name="ativo" type="boolean">
+                <constraints nullable="true" />
+            </column>
             <column name="cardapio_id" type="bigint">
                 <constraints nullable="true" />
             </column>
@@ -62,6 +65,7 @@
             <column name="imagem_content_type" type="string"/>
             <column name="preco" type="numeric"/>
             <column name="promocao" type="boolean"/>
+            <column name="ativo" type="boolean"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>

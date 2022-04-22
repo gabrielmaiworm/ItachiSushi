@@ -41,6 +41,9 @@ public class Sushi implements Serializable {
     @Column(name = "promocao")
     private Boolean promocao;
 
+    @Column(name = "ativo")
+    private Boolean ativo;
+
     @ManyToOne
     @JsonIgnoreProperties(
         value = { "especiais", "entradas", "sushis", "sashimis", "makimonos", "hots", "harumakis", "temakis", "yakisobas", "uramakis" },
@@ -141,6 +144,19 @@ public class Sushi implements Serializable {
         this.promocao = promocao;
     }
 
+    public Boolean getAtivo() {
+        return this.ativo;
+    }
+
+    public Sushi ativo(Boolean ativo) {
+        this.setAtivo(ativo);
+        return this;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
+
     public Cardapio getCardapio() {
         return this.cardapio;
     }
@@ -184,6 +200,7 @@ public class Sushi implements Serializable {
             ", imagemContentType='" + getImagemContentType() + "'" +
             ", preco=" + getPreco() +
             ", promocao='" + getPromocao() + "'" +
+            ", ativo='" + getAtivo() + "'" +
             "}";
     }
 }

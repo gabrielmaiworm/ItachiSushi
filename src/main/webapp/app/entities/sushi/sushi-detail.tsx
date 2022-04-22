@@ -59,6 +59,10 @@ export const SushiDetail = (props: RouteComponentProps<{ id: string }>) => {
             <span id="promocao">Promocao</span>
           </dt>
           <dd>{sushiEntity.promocao ? 'true' : 'false'}</dd>
+          <dt>
+            <span id="ativo">Ativo</span>
+          </dt>
+          <dd>{sushiEntity.ativo ? 'true' : 'false'}</dd>
           <dt>Cardapio</dt>
           <dd>{sushiEntity.cardapio ? sushiEntity.cardapio.id : ''}</dd>
         </dl>
