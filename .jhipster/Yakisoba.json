@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20220422142428",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "yakisoba",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descricao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "imagem",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "preco",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "promocao",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Yakisoba",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cardapio",
+      "otherEntityRelationshipName": "yakisoba",
+      "relationshipName": "cardapio",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
